@@ -15,6 +15,7 @@
   },
   "viewProfile": "Ver Perfil",
   "editProfile": {
+    "successMessage": "Seu perfil foi atualizado com sucesso!",
     "editButton": {
       "label": "Editar"
     },

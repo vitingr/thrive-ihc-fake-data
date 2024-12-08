@@ -15,6 +15,7 @@
   },
   "viewProfile": "See Profile",
   "editProfile": {
+    "successMessage": "Your profile has been updated successfully!",
     "editButton": {
       "label": "Edit"
     },

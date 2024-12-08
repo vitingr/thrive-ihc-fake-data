@@ -1,25 +1,19 @@
 'use client'
 
-import { Calendar } from '@/components/ui/calendar'
 import { Button } from '@/components/toolkit/Button'
 import { Modal } from '@/components/toolkit/Modal'
 import { useState } from 'react'
 import { EditProfileProps } from './types'
 import { SettingInput } from './SettingInput'
-import { useForm } from 'react-hook-form'
-import { zodResolver } from '@hookform/resolvers/zod'
-import { editProfileSchema } from './schema'
 import { DatePicker } from '@/components/common/DatePicker'
+import { toast } from 'react-toastify'
 
 export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
 
-  const { register, handleSubmit } = useForm({
-    resolver: zodResolver(editProfileSchema({ locale }))
-  })
-
-  const onSubmit = async () => {
-    return ''
+  const handleUpdateProfile = async () => {
+    toast.info(copy.successMessage)
+    setIsOpen(false)
   }
 
   return (
@@ -47,7 +41,6 @@ export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
                 placeholder={copy.name.placeholder}
                 spellCheck={false}
                 type="text"
-                {...register('name')}
                 required
               />
             </SettingInput>
@@ -57,7 +50,6 @@ export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
             <SettingInput copy={copy.language}>
               <select
                 className="w-full cursor-pointer rounded-md px-3 py-2 text-sm text-slate-600 outline-none ring-1 ring-slate-200 transition-all duration-300 placeholder:text-slate-400 focus:ring-indigo-500"
-                {...register('name')}
                 required
               >
                 <option className="cursor-pointer text-sm" value="">
@@ -74,6 +66,7 @@ export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
             <Button
               className="mt-4 min-w-full rounded-sm md:text-sm"
               variant="secondary"
+              onClick={() => handleUpdateProfile()}
             >
               {copy.button.label}
             </Button>
