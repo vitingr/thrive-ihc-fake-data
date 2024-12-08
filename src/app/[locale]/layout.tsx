@@ -6,8 +6,6 @@ import { PropsWithChildren } from 'react'
 import ToastMessage from '@/components/toolkit/ToastMessage'
 import { locales } from '@/constants/internationalization'
 import { Locale } from '@/constants/internationalization/types'
-import NextAuthProvider from '@/contexts/NextAuthProvider'
-import { authOptions } from '@/libs/auth'
 
 import '@/styles/index.scss'
 
@@ -25,15 +23,11 @@ const RootLayout: NextPage<RootLayoutProps> = async ({
 }) => {
   if (!locales.includes(locale)) notFound()
 
-  const session = await getServerSession(authOptions)
-
   return (
     <html lang={locale}>
       <body className="bg-neutral-100 selection:bg-blue-100">
-        <NextAuthProvider session={session}>
-          <ToastMessage />
-          {children}
-        </NextAuthProvider>
+        <ToastMessage />
+        {children}
       </body>
     </html>
   )

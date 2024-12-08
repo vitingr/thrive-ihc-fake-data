@@ -2,7 +2,6 @@ import Image from 'next/image'
 
 import { Button } from '@/components/toolkit/Button'
 import { Container } from '@/components/toolkit/Container'
-import { getUserSession } from '@/utils/auth/getUserSession'
 import { translation } from '@/utils/internationalization/translation'
 
 import { Navigation } from './Navigation'
@@ -12,7 +11,6 @@ import { getLocale } from 'next-intl/server'
 
 export const HeroProfile: React.FC = async () => {
   const locale = await getLocale()
-  const user = await getUserSession()
   const { raw } = await translation('profile')
 
   return (
@@ -24,19 +22,17 @@ export const HeroProfile: React.FC = async () => {
       <header className="flex w-full justify-between gap-4 ">
         <figure className="w-auto lg:min-w-20">
           <Image
-            alt={user.username}
-            className="cursor-pointer object-cover lg:h-20 lg:w-20 rounded-full transition-all duration-300 hover:brightness-125"
+            alt="User Profile Image"
+            className="cursor-pointer rounded-full object-cover transition-all duration-300 hover:brightness-125 lg:h-20 lg:w-20"
             height={80}
-            src={user.profile_picture}
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRzuPwkEQxYXmGDVeZl6XsH0_x6Tgs4ZipooLGfFSfnBLRbs70GKZ36GCplQ9yWz0d8k&usqp=CAU"
             width={80}
           />
         </figure>
         <article className="flex w-full flex-col gap-4">
           <div className="flex w-full flex-col">
-            <h1 className="font-semibold">
-              {user.firstname} {user.lastname}
-            </h1>
-            <p className="text-sm">Santa Bárbara dOeste, SP</p>
+            <h1 className="font-semibold">Vitor Silva</h1>
+            <p className="text-sm">Santa Bárbara d'Oeste, SP</p>
           </div>
           <p className="text-sm text-slate-500">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis,
@@ -48,7 +44,7 @@ export const HeroProfile: React.FC = async () => {
         <article className="flex h-auto w-auto items-start gap-4 lg:min-w-[220px]">
           <EditProfile locale={locale} copy={raw('editProfile')} />
           <Button className="md:text-sm" variant="secondaryOutline">
-            Ver Perfil
+            {raw('viewProfile')}
           </Button>
         </article>
       </header>

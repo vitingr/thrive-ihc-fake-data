@@ -1,0 +1,18 @@
+[data-cid="post-content"] {
+
+  p,
+  p * {
+    @apply text-sm text-slate-500;
+  }
+
+  strong {
+    @apply font-medium text-slate-700;
+  }
+
+  ul > li,
+  li > a,
+  li,
+  a {
+    @apply text-sm text-blue-500;
+  }
+}

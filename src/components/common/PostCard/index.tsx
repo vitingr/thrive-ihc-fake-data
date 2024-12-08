@@ -32,7 +32,8 @@ export const PostCard: React.FC<PostCardProps> = ({
         </div>
         <PostDropdown />
       </div>
-      <p
+      <article
+        data-cid="post-content"
         className="px-4 text-sm"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />

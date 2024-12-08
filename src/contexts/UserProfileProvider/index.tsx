@@ -9,16 +9,13 @@ import { UserProfileContextProps, UserProfileProviderProps } from './types'
 const UserProfileContext = createContext<UserProfileContextProps>(null)
 
 export const UserProfileProvider: React.FC<UserProfileProviderProps> = ({
-  children,
-  user,
-  myCreatedPosts
+  children
 }) => {
   const [currentSelectedTab, setCurrentSelectedTab] = useState<number>(0)
-  const [myPosts, _] = useState<Post[]>(myCreatedPosts)
 
   return (
     <UserProfileContext.Provider
-      value={{ currentSelectedTab, setCurrentSelectedTab, user, myPosts }}
+      value={{ currentSelectedTab, setCurrentSelectedTab }}
     >
       {children}
     </UserProfileContext.Provider>

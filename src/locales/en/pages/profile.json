@@ -13,6 +13,7 @@
       "Settings"
     ]
   },
+  "viewProfile": "See Profile",
   "editProfile": {
     "editButton": {
       "label": "Edit"
