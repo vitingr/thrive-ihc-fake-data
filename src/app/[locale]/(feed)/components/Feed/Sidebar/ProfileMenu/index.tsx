@@ -54,7 +54,7 @@ export const ProfileMenu: React.FC = async () => {
                 <p className="w-full text-sm text-slate-600">
                   {t('list.firstColumn.friends')}
                 </p>
-                <p className="text-sm font-medium text-blue-500">10 amigos</p>
+                <p className="text-sm font-medium text-blue-500">10</p>
               </span>
               <p className="w-full cursor-pointer px-4 py-1 text-sm text-slate-600 transition-all duration-default hover:bg-neutral-100">
                 {t('list.firstColumn.analytics')}

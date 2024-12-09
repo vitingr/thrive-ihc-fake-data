@@ -40,7 +40,7 @@ export const PostCard: React.FC<PostCardProps> = ({
       <figure className="w-full max-w-full rounded-sm">
         <Image
           alt="Post Hero Image"
-          className="max-h-[420px] max-w-[620px] rounded-sm object-cover selection:bg-transparent"
+          className="max-h-[420px] max-w-full rounded-sm object-cover selection:bg-transparent"
           height={3375}
           src={post.feature_image.src}
           width={6000}

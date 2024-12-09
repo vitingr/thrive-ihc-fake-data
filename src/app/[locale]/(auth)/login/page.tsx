@@ -22,7 +22,7 @@ const Page: NextPage<NextPageDefaultProps> = async ({ params: { locale } }) => {
   const { raw } = await translation('auth')
 
   return (
-    <main className="flex h-screen w-screen flex-col items-center justify-center gap-4 bg-slate-100">
+    <main className="flex h-screen w-screen flex-col items-center gap-4 bg-slate-100 px-4 py-8 sm:justify-center lg:px-0 lg:py-0">
       <AuthForm copy={raw('form')} locale={locale} />
       <CreateAccount copy={raw('form')} />
     </main>
