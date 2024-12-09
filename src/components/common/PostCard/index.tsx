@@ -19,7 +19,7 @@ export const PostCard: React.FC<PostCardProps> = ({
               alt={post.user.name}
               className="h-10 w-10 cursor-pointer rounded-full object-cover transition-all duration-300 selection:bg-transparent hover:brightness-125"
               height={410}
-              src={post.feature_image.src}
+              src={post.user.profile_picture.src}
               width={615}
             />
           </figure>
@@ -40,10 +40,9 @@ export const PostCard: React.FC<PostCardProps> = ({
       <figure className="w-full max-w-full rounded-sm">
         <Image
           alt="Post Hero Image"
-          className="max-h-[420px] rounded-sm object-cover selection:bg-transparent"
+          className="max-h-[420px] max-w-[620px] rounded-sm object-cover selection:bg-transparent"
           height={3375}
-          // src={post.feature_image.src}
-          src="https://birchtree.me/content/images/size/w2000/2020/08/DB0B3B0A-1888-41AB-B044-AB24A90229CE..jpeg"
+          src={post.feature_image.src}
           width={6000}
         />
       </figure>
