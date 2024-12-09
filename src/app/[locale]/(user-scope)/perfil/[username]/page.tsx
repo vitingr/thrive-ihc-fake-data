@@ -25,8 +25,8 @@ const Page: NextPage<NextPageDefaultProps> = async ({ params: { locale } }) => {
   return (
     <>
       <Navbar />
-      <main className="mx-auto flex min-h-[62vh] max-w-2xl flex-col gap-4 px-4 py-6 lg:max-w-7xl lg:gap-8 lg:py-12 xl:px-0">
-        <span className="w-full px-4">
+      <main className="lg:-mt-0 mx-auto -mt-[100px] flex min-h-[62vh] max-w-2xl flex-col gap-4 px-4 py-6 lg:max-w-7xl lg:gap-8 lg:py-12 xl:px-0">
+        <span className="w-full lg:px-4">
           <Breadcrumb items={[{ name: 'Perfil', href: '#' }]} />
         </span>
         <div className="flex w-full justify-between gap-4 lg:gap-8">

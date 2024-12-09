@@ -26,12 +26,16 @@ export const MobileNavbar: React.FC<NavbarProps> = async () => {
           <SidebarMenu />
         </section>
       </nav>
-      <nav className="sticky top-[91.5%] z-[99999999] flex min-h-[300px] w-full flex-col items-start bg-white px-6 py-4 shadow lg:hidden">
+      <nav className="sticky top-[91.5%] z-[99999999] flex min-h-[100px] w-full flex-col items-start bg-white px-6 py-4 shadow lg:hidden">
         <section className="flex w-full items-center justify-between gap-4">
           <Home className="h-6.5 w-6.5 text-slate-600" />
           <Explore className="h-6.5 w-6.5 text-slate-600" />
           <CreatePost className="h-6.5 w-6.5 text-slate-600" />{' '}
-          <figure className="w-auto lg:min-w-8">
+          <Anchor
+            href="/perfil/vitor-silva"
+            variant="custom"
+            className="w-auto lg:min-w-8"
+          >
             <Image
               alt="User Profile Image"
               className="h-8 w-8 cursor-pointer rounded-full object-cover transition-all duration-300 hover:brightness-125"
@@ -39,7 +43,7 @@ export const MobileNavbar: React.FC<NavbarProps> = async () => {
               src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRzuPwkEQxYXmGDVeZl6XsH0_x6Tgs4ZipooLGfFSfnBLRbs70GKZ36GCplQ9yWz0d8k&usqp=CAU"
               width={80}
             />
-          </figure>
+          </Anchor>
         </section>
       </nav>
     </>

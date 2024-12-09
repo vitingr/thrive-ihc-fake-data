@@ -4,7 +4,7 @@ import { Shoes } from './icons/Shoes'
 
 export const UserHighlights: React.FC = async () => {
   return (
-    <ul className="flex w-full gap-4">
+    <ul className="flex lg:flex-row flex-col w-full gap-4">
       <li className="flex cursor-pointer gap-2 rounded-[6px] border border-slate-200 p-2 transition-all duration-300 hover:bg-neutral-50">
         <Calendar className="mt-1.5 h-5 w-5 text-slate-500" />
         <article className="flex flex-col">

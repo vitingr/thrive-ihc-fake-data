@@ -21,7 +21,7 @@ export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
   return (
     <>
       <Button
-        className="md:text-sm"
+        className="text-xs md:text-sm"
         onClick={() => setIsOpen(true)}
         variant="secondary"
       >

@@ -40,7 +40,7 @@ export const ProfileMenu: React.FC = async () => {
             <div className="flex w-full flex-col items-center px-4 py-4 underline-offset-2">
               <Anchor
                 className="text-sm text-slate-600 transition-all duration-300 hover:underline"
-                href={`/profile/vitor-silva`}
+                href={`/perfil/vitor-silva`}
                 variant="custom"
               >
                 Vitor Gabriel Silva
