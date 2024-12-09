@@ -9,7 +9,7 @@ export const Navigation: React.FC<NavigationProps> = ({ copy }) => {
   const { currentSelectedTab, setCurrentSelectedTab } = useUserProfileContext()
 
   return (
-    <ul className="flex w-full overflow-scroll">
+    <ul className="flex w-full overflow-scroll lg:overflow-hidden">
       {copy.navigation.map((navigationItem, index: number) => (
         <li className="contents" key={`${navigationItem}-${index}`}>
           <Button
