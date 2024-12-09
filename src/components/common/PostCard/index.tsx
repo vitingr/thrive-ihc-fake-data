@@ -19,7 +19,7 @@ export const PostCard: React.FC<PostCardProps> = ({
               alt={post.user.name}
               className="h-10 w-10 cursor-pointer rounded-full object-cover transition-all duration-300 selection:bg-transparent hover:brightness-125"
               height={410}
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRzuPwkEQxYXmGDVeZl6XsH0_x6Tgs4ZipooLGfFSfnBLRbs70GKZ36GCplQ9yWz0d8k&usqp=CAU"
+              src={post.feature_image.src}
               width={615}
             />
           </figure>
