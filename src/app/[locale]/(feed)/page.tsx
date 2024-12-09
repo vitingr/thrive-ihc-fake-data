@@ -23,7 +23,7 @@ const Page: NextPage<NextPageDefaultProps> = async ({ params: { locale } }) => {
   return (
     <>
       <Navbar />
-      <main className="-mt-[300px] lg:-mt-0">
+      <main className="-mt-[100px] lg:-mt-0">
         <Feed />
       </main>
       <Footer />
