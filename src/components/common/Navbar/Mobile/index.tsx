@@ -26,7 +26,7 @@ export const MobileNavbar: React.FC<NavbarProps> = async () => {
           <SidebarMenu />
         </section>
       </nav>
-      <nav className="sticky top-[93%] z-[99999999] flex min-h-[300px] w-full flex-col items-start bg-white px-6 py-4 shadow lg:hidden">
+      <nav className="sticky top-[91.5%] z-[99999999] flex min-h-[300px] w-full flex-col items-start bg-white px-6 py-4 shadow lg:hidden">
         <section className="flex w-full items-center justify-between gap-4">
           <Home className="h-6.5 w-6.5 text-slate-600" />
           <Explore className="h-6.5 w-6.5 text-slate-600" />
