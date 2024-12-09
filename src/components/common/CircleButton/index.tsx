@@ -1,9 +1,10 @@
 import { Anchor } from '@/components/toolkit/Anchor'
+
 import { CircleButtonProps } from './types'
 
 export const CircleButton: React.FC<CircleButtonProps> = ({ label, href }) => {
   return (
-    <Anchor variant="custom" href={href} data-cid="circle-button">
+    <Anchor data-cid="circle-button" href={href} variant="custom">
       <button className="cta" type="button">
         <span>{label}</span>
         <svg height="10px" viewBox="0 0 13 10" width="15px">

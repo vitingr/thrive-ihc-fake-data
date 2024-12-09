@@ -12,6 +12,12 @@ export interface Post {
   // number_likes: number
   // type: PostType
   // user_liked?: boolean
+  content: string
+  feature_image: {
+    src: string
+    alt: string
+  }
+  liked_by: string[]
   // video_url: string
   user: {
     name: string
@@ -21,12 +27,6 @@ export interface Post {
       alt: string
     }
   }
-  feature_image: {
-    src: string
-    alt: string
-  }
-  content: string
-  liked_by: string[]
 }
 
 // export type PostType = 'video' | 'image'

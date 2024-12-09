@@ -1,12 +1,13 @@
 'use client'
 
+import { useEffect, useState } from 'react'
+
 import { PostCard } from '@/components/common/PostCard'
+import { SkeletonHorizontalCard } from '@/components/skeletons/SkeletonHorizontalCard'
 import { Post } from '@/types/models/post'
 
-import { PostFeedProps } from './types'
 import { POSTS_DATA } from './data'
-import { useEffect, useState } from 'react'
-import { SkeletonHorizontalCard } from '@/components/skeletons/SkeletonHorizontalCard'
+import { PostFeedProps } from './types'
 
 export const PostFeed: React.FC<PostFeedProps> = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false)

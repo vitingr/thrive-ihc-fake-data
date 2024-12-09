@@ -1,4 +1,4 @@
-import { SuggestUserProps } from "../types";
+import { SuggestUserProps } from '../types'
 
 export interface SuggestFriendCardProps {
   user: SuggestUserProps

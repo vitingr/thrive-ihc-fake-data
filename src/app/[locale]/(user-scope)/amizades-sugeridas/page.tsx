@@ -7,6 +7,7 @@ import Footer from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { NextPageDefaultProps } from '@/types/nextPageDefaultProps'
 import { getMetaData } from '@/utils/getters/getMetaData'
+
 import { SuggestPeople } from './components/SuggestPeople'
 
 export async function generateMetadata() {

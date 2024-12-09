@@ -2,10 +2,10 @@
 
 import Image from 'next/image'
 
+import { Breadcrumb } from '@/components/common/Breadcrumb'
 import { Button } from '@/components/toolkit/Button'
 
 import { AuthFormProps } from './types'
-import { Breadcrumb } from '@/components/common/Breadcrumb'
 
 export const AuthForm: React.FC<AuthFormProps> = ({ copy, locale }) => {
   return (

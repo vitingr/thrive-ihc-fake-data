@@ -41,9 +41,7 @@ export const PostActions: React.FC = () => {
           )}
         </figure>
       </div>
-      <p className="w-full px-4 text-sm text-slate-600">
-        10 curtidas
-      </p>
+      <p className="w-full px-4 text-sm text-slate-600">10 curtidas</p>
     </>
   )
 }

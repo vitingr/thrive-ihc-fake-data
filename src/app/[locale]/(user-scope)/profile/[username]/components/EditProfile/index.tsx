@@ -1,12 +1,14 @@
 'use client'
 
+import { useState } from 'react'
+import { toast } from 'react-toastify'
+
+import { DatePicker } from '@/components/common/DatePicker'
 import { Button } from '@/components/toolkit/Button'
 import { Modal } from '@/components/toolkit/Modal'
-import { useState } from 'react'
-import { EditProfileProps } from './types'
+
 import { SettingInput } from './SettingInput'
-import { DatePicker } from '@/components/common/DatePicker'
-import { toast } from 'react-toastify'
+import { EditProfileProps } from './types'
 
 export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
   const [isOpen, setIsOpen] = useState<boolean>(false)
@@ -20,8 +22,8 @@ export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
     <>
       <Button
         className="md:text-sm"
-        variant="secondary"
         onClick={() => setIsOpen(true)}
+        variant="secondary"
       >
         {copy.editButton.label}
       </Button>
@@ -65,8 +67,8 @@ export const EditProfile: React.FC<EditProfileProps> = ({ copy, locale }) => {
             </SettingInput>
             <Button
               className="mt-4 min-w-full rounded-sm md:text-sm"
-              variant="secondary"
               onClick={() => handleUpdateProfile()}
+              variant="secondary"
             >
               {copy.button.label}
             </Button>

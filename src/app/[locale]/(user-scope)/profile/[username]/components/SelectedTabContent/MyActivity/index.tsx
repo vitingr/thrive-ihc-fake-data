@@ -1,9 +1,7 @@
 'use client'
 
 import { EmptyPapertray } from '@/assets/common/EmptyPapertray'
-import { PostCard } from '@/components/common/PostCard'
 import { Container } from '@/components/toolkit/Container'
-import { useUserProfileContext } from '@/contexts/UserProfileProvider'
 
 export const MyActivity: React.FC = () => {
   return (

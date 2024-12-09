@@ -33,9 +33,9 @@ export const PostCard: React.FC<PostCardProps> = ({
         <PostDropdown />
       </div>
       <article
-        data-cid="post-content"
         className="px-4 text-sm"
         dangerouslySetInnerHTML={{ __html: post.content }}
+        data-cid="post-content"
       />
       <figure className="w-full max-w-full rounded-sm">
         <Image

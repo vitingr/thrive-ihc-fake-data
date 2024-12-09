@@ -24,7 +24,7 @@ const RootLayout: NextPage<RootLayoutProps> = async ({
 
   return (
     <html lang={locale}>
-      <body className="bg-neutral-100 selection:bg-blue-100">
+      <body className="bg-white selection:bg-blue-100 lg:bg-neutral-100">
         <ToastMessage />
         {children}
       </body>

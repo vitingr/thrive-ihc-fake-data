@@ -1,7 +1,7 @@
 export interface SuggestUserProps {
-  name: string
+  background_picture: string
   bio: string
   common_followers: number
+  name: string
   profile_picture: string
-  background_picture: string
 }

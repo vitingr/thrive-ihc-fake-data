@@ -2,11 +2,11 @@
 
 import Image from 'next/image'
 
+import { Breadcrumb } from '@/components/common/Breadcrumb'
 import { Button } from '@/components/toolkit/Button'
+import { delay } from '@/utils/helpers/delay'
 
 import { AuthFormProps } from './types'
-import { delay } from '@/utils/helpers/delay'
-import { Breadcrumb } from '@/components/common/Breadcrumb'
 
 export const AuthForm: React.FC<AuthFormProps> = ({ copy, locale }) => {
   const handleSubmit = async () => {

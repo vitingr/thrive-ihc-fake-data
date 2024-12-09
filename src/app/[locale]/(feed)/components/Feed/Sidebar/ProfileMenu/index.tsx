@@ -20,10 +20,10 @@ export const ProfileMenu: React.FC = async () => {
         <section className="rounded-md bg-white">
           <figure className="w-full">
             <Image
-              src='https://wallpapercave.com/wp/wp10824842.jpg'
               alt="Vitor Background Picture"
               className="h-full max-h-[60px] w-full rounded-t-md object-cover"
               height={1080}
+              src="https://wallpapercave.com/wp/wp10824842.jpg"
               width={1920}
             />
           </figure>
@@ -32,7 +32,7 @@ export const ProfileMenu: React.FC = async () => {
               alt="Vitor Profile Picture"
               className="mx-auto -mt-6 h-12 w-12 cursor-pointer rounded-full transition-all duration-300 hover:brightness-125"
               height={400}
-              src="https://avatars.githubusercontent.com/u/102386982?v=4"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQRzuPwkEQxYXmGDVeZl6XsH0_x6Tgs4ZipooLGfFSfnBLRbs70GKZ36GCplQ9yWz0d8k&usqp=CAU"
               width={400}
             />
           </figure>
@@ -45,16 +45,16 @@ export const ProfileMenu: React.FC = async () => {
               >
                 Vitor Gabriel Silva
               </Anchor>
-              <p className="text-xs text-slate-500">@vitorgabriel123@gmail.com</p>
+              <p className="text-xs text-slate-500">
+                @vitorgabriel123@gmail.com
+              </p>
             </div>
             <div className="flex w-full flex-col py-3">
               <span className="flex w-full cursor-pointer items-center justify-between gap-2 px-4 py-1 transition-all duration-default hover:bg-neutral-100">
                 <p className="w-full text-sm text-slate-600">
                   {t('list.firstColumn.friends')}
                 </p>
-                <p className="text-sm font-medium text-blue-500">
-                  10 amigos
-                </p>
+                <p className="text-sm font-medium text-blue-500">10 amigos</p>
               </span>
               <p className="w-full cursor-pointer px-4 py-1 text-sm text-slate-600 transition-all duration-default hover:bg-neutral-100">
                 {t('list.firstColumn.analytics')}

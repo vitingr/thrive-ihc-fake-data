@@ -7,7 +7,6 @@ import { translation } from '@/utils/internationalization/translation'
 
 import { AuthForm } from './components/AuthForm'
 import { LogginWithAccount } from './components/LogginWithAccount'
-import { Breadcrumb } from '@/components/common/Breadcrumb'
 
 export async function generateMetadata() {
   return getMetaData({

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { IoApps } from 'react-icons/io5'
 
 import { Anchor } from '@/components/toolkit/Anchor'

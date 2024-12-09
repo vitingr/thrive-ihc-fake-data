@@ -1,13 +1,13 @@
+import { getLocale } from 'next-intl/server'
 import Image from 'next/image'
 
 import { Button } from '@/components/toolkit/Button'
 import { Container } from '@/components/toolkit/Container'
 import { translation } from '@/utils/internationalization/translation'
 
+import { EditProfile } from '../EditProfile'
 import { Navigation } from './Navigation'
 import { UserHighlights } from './UserHighlights'
-import { EditProfile } from '../EditProfile'
-import { getLocale } from 'next-intl/server'
 
 export const HeroProfile: React.FC = async () => {
   const locale = await getLocale()
@@ -42,7 +42,7 @@ export const HeroProfile: React.FC = async () => {
           </p>
         </article>
         <article className="flex h-auto w-auto items-start gap-4 lg:min-w-[220px]">
-          <EditProfile locale={locale} copy={raw('editProfile')} />
+          <EditProfile copy={raw('editProfile')} locale={locale} />
           <Button className="md:text-sm" variant="secondaryOutline">
             {raw('viewProfile')}
           </Button>

@@ -2,8 +2,6 @@
 
 import { createContext, useContext, useState } from 'react'
 
-import { Post } from '@/types/models/post'
-
 import { UserProfileContextProps, UserProfileProviderProps } from './types'
 
 const UserProfileContext = createContext<UserProfileContextProps>(null)
