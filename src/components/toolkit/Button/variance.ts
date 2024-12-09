@@ -3,13 +3,13 @@ import { cva } from 'class-variance-authority'
 export const buttonVariants = cva(
   [
     'max-w-fit',
-    'rounded-full',
+    'rounded-[2px]',
     'px-6',
     'py-2',
     'w-full',
     'tracking-wide',
     'transition-all',
-    'duratin-300',
+    'duration-300',
     'ease-in-out',
     'disabled:cursor-not-allowed',
     'disabled:opacity-60'
@@ -17,13 +17,13 @@ export const buttonVariants = cva(
   {
     variants: {
       variant: {
-        primary: ['text-slate-50', 'bg-indigo-500', 'hover:brightness-[125%]'],
+        primary: ['text-slate-50', 'bg-blue-500', 'hover:brightness-[125%]'],
         primaryOutline: [
-          'text-indigo-600',
+          'text-blue-600',
           'border',
-          'border-indigo-500',
-          'hover:bg-indigo-500',
-          'hover:border-indigo-500',
+          'border-blue-500',
+          'hover:bg-blue-500',
+          'hover:border-blue-500',
           'hover:text-slate-50'
         ],
         secondary: [

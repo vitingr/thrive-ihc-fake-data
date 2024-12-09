@@ -6,11 +6,7 @@ import { CircleButton } from '@/components/common/CircleButton'
 import { FOLLOWERS, PEOPLE_YOU_MIGHT_KNOW } from './data'
 
 export const PeopleYouMightKnow: React.FC = async () => {
-  // const user = await getUserSession()
   const t = await getTranslations('sidebar')
-
-  // const { data: suggestedFriends } =
-  //   await instanceContent.friends.getSuggestFriends({ userId: user.id })
 
   return  (
       <article className="flex w-full flex-col gap-4 rounded-md bg-white p-4">
@@ -51,7 +47,7 @@ export const PeopleYouMightKnow: React.FC = async () => {
             </li>
           ))}
         </ul>
-        <CircleButton label={t('content.seeMore')} />
+        <CircleButton href='/amizades-sugeridas' label={t('content.seeMore')} />
       </article>
 
   )

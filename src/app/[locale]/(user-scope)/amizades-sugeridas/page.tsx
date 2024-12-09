@@ -7,6 +7,7 @@ import Footer from '@/components/common/Footer'
 import { Navbar } from '@/components/common/Navbar'
 import { NextPageDefaultProps } from '@/types/nextPageDefaultProps'
 import { getMetaData } from '@/utils/getters/getMetaData'
+import { SuggestPeople } from './components/SuggestPeople'
 
 export async function generateMetadata() {
   return getMetaData({
@@ -25,10 +26,10 @@ const Page: NextPage<NextPageDefaultProps> = async ({ params: { locale } }) => {
       <Navbar />
       <main className="mx-auto flex min-h-[62vh] max-w-2xl flex-col gap-4 px-4 py-6 lg:max-w-7xl lg:gap-8 lg:py-12 xl:px-0">
         <span className="w-full px-4">
-          <Breadcrumb items={[{ name: 'Perfil', href: '#' }]} />
+          <Breadcrumb items={[{ name: 'Amizades sugeridas', href: '#' }]} />
         </span>
         <div className="flex w-full justify-between gap-4 lg:gap-8">
-
+          <SuggestPeople />
           <Sidebar />
         </div>
       </main>

@@ -29,7 +29,7 @@ export const Treding: React.FC<TrendingProps> = async () => {
           </li>
         ))}
       </ul>
-      <CircleButton label={t('content.seeMore')} />
+      <CircleButton href='#' label={t('content.seeMore')} />
     </article>
   )
 }
