@@ -1,5 +1,4 @@
 import { NextPage } from 'next'
-import { getServerSession } from 'next-auth'
 import { notFound } from 'next/navigation'
 import { PropsWithChildren } from 'react'
 
