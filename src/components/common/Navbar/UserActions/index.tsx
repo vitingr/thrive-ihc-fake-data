@@ -5,7 +5,6 @@ import { Anchor } from '@/components/toolkit/Anchor'
 
 import { UserActionsProps } from './types'
 import { UserScope } from './UserScope'
-import { LogOut } from './UserScope/LogOut'
 
 export const UserActions: React.FC<UserActionsProps> = async ({ copy }) => {
   return (
